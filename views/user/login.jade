@@ -1,0 +1,19 @@
+extends ../layout.jade
+
+block content
+  div.col-md-4.col-md-offset-4
+    div.panel.panel-default
+      div.panel-heading
+        div.panel-title เข้าสู่ระบบ
+      div.panel-body
+        form(role='form', action="/api/login",method="post" ,novalidate)
+          div.form-group
+            label ชื่อผู้ใช้
+            input.form-control(type="text",name='username',required)
+          div.form-group
+            label รหัสผ่าน
+            input.form-control(type="password",name='password',required)
+          div.form-group
+            input.btn.btn-block.btn-warning(type="submit",ng-init="agree = false",value="เข้าสู่ระบบ")
+          div.form-group
+            a.btn.btn-block.btn-info(href="/register") สมัครสมาชิก

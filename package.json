@@ -1,0 +1,46 @@
+{
+  "name": "bookberk",
+  "version": "1.0.0",
+  "description": "A Starter node.js express template.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node-dev server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstziiz/bookberk.git"
+  },
+  "keywords": [
+    "bookberk"
+  ],
+  "author": "KS",
+  "bugs": {
+    "url": "https://github.com/firstziiz/bookberk/issues"
+  },
+  "homepage": "https://github.com/firstziiz/bookberk#readme"
+}

@@ -1,0 +1,44 @@
+doctype html
+html(lang='en', ng-app='situpdate')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    
+    // CSS Include.
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/font-awesome.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    
+    // Vendor Include.
+    script(src='/javascript/jquery.min.js')
+    script(src='/javascript/bootstrap.min.js')
+    
+    //- Angularjs Zone
+    //- script(src='/app/app.js')
+    
+  body
+    nav.navbar.navbar-default.navbar-static-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle(type="button",data-toggle="collapse",data-target="#navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Bookberk
+        div#navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href="/dashboard") home
+          ul.nav.navbar-nav.navbar-right
+            //- User Authenticate
+            if (!user)
+              a.navbar-btn.btn.btn-warning(href="/login") เข้าสู่ระบบ
+            else
+              li
+                a
+                  span คุณกำลังเข้าสู่ระบบในนามของ #{user.username}
+              a.navbar-btn.btn.btn-warning(href="/logout") ออกจากระบบ
+    div#main
+      div.container.dashboard
+        block content
