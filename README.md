@@ -7,23 +7,23 @@ A Starter node.js express template .
 
 ### Installation
   
-  Clone 'Bookberk' repo:
+  Clone 'Bookberk' repo ->
 
     $ git clone https://github.com/firstziiz/bookberk.git
     $ cd bookberk
 
-  Install dependencies:
+  Install dependencies ->
 
     $ npm install
 
 
 ### Quick Start
   
-  Start Mongo :
+  Start Mongo ->
 
     $ mongod
 
-  Start the server:
+  Start the server ->
 
     $ node server.js
 
@@ -33,7 +33,7 @@ A Starter node.js express template .
     
   and ..
   
-  Run Gulp in another process:
+  Run Gulp in another process ->
   
     $ gulp
 
